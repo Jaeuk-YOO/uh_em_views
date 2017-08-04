@@ -2,7 +2,9 @@
 @import 'demo';
 @import 'material-dashboard.css';
 @import 'material-dashboard.scss';
+
 /*
+
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -20,3 +22,38 @@
  *= require_demo
  *= require_material-dashboard
  */
+
+
+ // google web font hangeal
+ @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+
+ html {
+   font-size: 15px;
+   line-height: 1.6;
+ }
+
+ * {
+   font-family: 'Open Sans', sans-serif;
+   color: #181818;
+ }
+
+  .navbar-brand {
+    font-family: 'Hanna', serif;
+    font-size: 1.333rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+ .header {
+   height: 600px;
+  //  border-color: black;app\assets\images\uh_em\index_0804-01.png
+   background-image: url("http://postfiles3.naver.net/MjAxNzA4MDRfMTI4/MDAxNTAxODQ3NzU3OTM2.fhORF2kd2QzPFmtE3o6cs1mxB8jfE7caq_R3YyA_XXIg.qvsNBq0xu1bPBcYmmgL1H_rCxXbGcx6sjMMhrDQzMCUg.PNG.jahnne/index_0804-01.png?type=w773");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+ }
+
+ .nav .navbar-nav {
+   margin-left : auto;
+ }
