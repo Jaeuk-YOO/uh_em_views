@@ -5,4 +5,13 @@ Rails.application.routes.draw do
   root 'uh_em#index'
   get '/uh_em/index'
 
+# /models/sign_in
+# /models/sign_out
+# /models/password/new
+# /models/password/edit
+# /models/password
+# /models/cancel
+# /models/sign_up
+# /models/edit
+
 end
