@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root 'uh_em#index'
   get '/uh_em/index'
-
+  get '/uh_em/search_list'
 # /models/sign_in
 # /models/sign_out
 # /models/password/new
