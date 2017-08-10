@@ -21,6 +21,7 @@
  *= require_bootstrap.min
  *= require_demo
  *= require_material-dashboard
+ *= require_uh_em
  */
 
 
@@ -38,22 +39,26 @@
    color: #181818;
  }
 
-  .navbar-brand {
-    font-family: 'Hanna', serif;
-    font-size: 1.333rem;
-    font-weight: 400;
-    line-height: 1;
-  }
 
- .header {
-   height: 600px;
+ .navbar-brand {
+   font-family: 'Hanna', serif;
+   font-size: 1.333rem;
+   font-weight: 400;
+   line-height: 1;
+ }
+
+ .indexback {
+  height: 600px;
+  // width: auto;
+  background: url('/assets/index_0807-01.jpg') !important;
+  //url("../images/index_0807-01.jpg");
   //  border-color: black;app\assets\images\uh_em\index_0804-01.png
-   background-image: url("http://postfiles3.naver.net/MjAxNzA4MDRfMTI4/MDAxNTAxODQ3NzU3OTM2.fhORF2kd2QzPFmtE3o6cs1mxB8jfE7caq_R3YyA_XXIg.qvsNBq0xu1bPBcYmmgL1H_rCxXbGcx6sjMMhrDQzMCUg.PNG.jahnne/index_0804-01.png?type=w773");
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
  }
 
  .nav .navbar-nav {
-   margin-left : auto;
+  margin-left : auto;
  }
