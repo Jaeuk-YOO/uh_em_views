@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   root 'uh_em#index'
   get '/uh_em/index'
+  get '/uh_em/search_list'
   get '/jido/maps'
 
 # /models/sign_in
