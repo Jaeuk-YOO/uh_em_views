@@ -8,11 +8,11 @@
     <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/apple-icon.png">
     <link rel="icon" type="image/png" href="/assets/images/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Material Dashboard Pro by Creative Tim</title>
+    <title>uh-em?</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <meta name="viewport" content="width=device-width">
 
-    <%= stylesheet_link_tag    'application', media: 'all'%>
+    <%= stylesheet_link_tag 'application', media: 'all'%>
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
@@ -30,92 +30,56 @@
   </head>
 
   <body>
+    <!-- nav -->
+    <nav class="navbar navbar-toggleable-md
+    navbar-light mx-5 px-5">
+      <button class="navbar-toggler navbar-toggler-right bg-main" type="button"
+       data-toggle="collapse"  data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- banner start -->
-    <div class="banner">
-      <!-- nav -->
-      <nav class="navbar navbar-toggleable-md
-      navbar-light mx-5 px-5">
-        <button class="navbar-toggler
-        navbar-toggler-right bg-main"
-        type="button" data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-          <div class="brand">
-            <a class="navbar-brand" href="#">어-음?</a>
-          </div>
-      <div class="collapse navbar-collapse
-      justify-content-end" id="navbarNav">
-        <div class="row justify-content-end">
-        <ul class="navbar-nav">
-          <li class="nav-item px-4 active">
-            <a class="nav-link" href="">SEARCH<span class="sr-only">(현재 페이지)</span></a>
-          </li>
-          <li class="nav-item px-4">
-            <a class="nav-link" href="#">MY MENU</a>
-          </li>
-          <li class="nav-item px-4">
-            <a class="nav-link" href="/users/sign_in">LOG-IN</a>
-          </li>
-          <li class="nav-item px-4">
-            <a class="nav-link" href="/users/sign_in">SIGN-UP</a>
-          </li>
-        </ul>
+        <div class="brand">
+          <a class="navbar-brand" href="/uh_em/index">어-음?</a>
         </div>
-      </div>
-      </nav>
-      <!-- nav end -->
-      <div class="row index-logo">
-      <img src="/assets/0812index-logo.png" alt="index-logo">
-      </div>
 
-      <div class="buttons container">
-      <div class="price row justify-content-center">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div class="row justify-content-end">
 
-        <div class="price-1 row my-3">
-          <label for="pricebottom" class="col-4 col-form-label my-auto">최저가</label>
-          <div class="col-8 my-auto">
-            <input class="price_low" type="number" value="0" id="priceLow">
+            <% if current_user.nil? %>
+              <ul class="navbar-nav">
+                <li class="nav-item px-4 active">
+                  <a class="nav-link" href="">SEARCH<span class="sr-only">(현재 페이지)</span></a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link" href="/users/sign_in">LOG-IN</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link" href="/users/sign_up">SIGN-UP</a>
+                </li>
+              </ul>
+            <% else %>
+              <ul class="navbar-nav">
+                <li class="nav-item px-4">
+                  <a class="nav-link"> ㅇㅇㅇ님 안녕하세요! </a>
+                </li>
+                <li class="nav-item px-4 active">
+                  <a class="nav-link" href="">SEARCH<span class="sr-only">(현재 페이지)</span></a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link" href="#">MY MENU</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link" href="/users/sign_out">LOG-OUT</a>
+                </li>
+              </ul>
+            <% end %>
           </div>
         </div>
-
-        <div class="price-2 row my-3">
-          <label for="pricetop" class="col-4 col-form-label my-auto">최고가</label>
-          <div class="col-8 my-auto">
-            <input class="price_top" type="number" value="0" id="priceTop">
-          </div>
-        </div>
-
-        <div class="location row my-3">
-          <!-- <label for="userlocation" class="col-4 col-form-label my-auto">당신의 위치</label> -->
-          <div class="col-8 my-auto">
-            <input class="user_location" type="text" value="위치를 입력해주세요." id="userLocation">
-          </div>
-
-
-        </div>
-
-        <div class="submitbutton">
-          <button type="submit" class="btn">Submit</button>
-        </div>
-        
-      </div>
-
-      </div>
-
-    </div>
-  <!-- banner end -->
+    </nav>
+    <!-- nav end -->
 
     <%= yield %>
 
     <!-- jquery CDN -->
-
-    </script>
-
-
   </body>
 </html>
