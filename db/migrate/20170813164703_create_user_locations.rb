@@ -7,7 +7,6 @@ class CreateUserLocations < ActiveRecord::Migration[5.1]
       t.string  :location_y
       t.string  :location_address
 
-
       t.timestamps
     end
   end
