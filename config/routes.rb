@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :review_posts
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
@@ -6,6 +7,7 @@ Rails.application.routes.draw do
   get '/uh_em/index'
   get '/uh_em/search_list'
   get '/jido/maps'
+  get '/uh_em/mymenu'
   post '/jido/maps' => 'mylocation#create'
   get 'jido/search'
 # /models/sign_in

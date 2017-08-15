@@ -194,3 +194,7 @@ input#userLocation.user_location {
   background: none;
   border: none;
 }
+
+::-webkit-input-placeholder { /* 크롬 4–56 */
+    color: #fff;
+}
