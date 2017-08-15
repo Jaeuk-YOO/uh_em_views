@@ -28,4 +28,4 @@ class UhEmController < ApplicationController
 
   # 로케이션 버튼을 누르면 네이버 길찾기 페이지로 넘어가게 하기
 
-end
+end 
