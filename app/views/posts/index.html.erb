@@ -1,0 +1,11 @@
+<% @post.each do |x| %>
+<p>
+<%= x.id %>
+<%= x.title %>
+<%= x.content %>
+<%= link_to '글 보여주기' , "/posts/show/#{x.id}" %>
+<%= link_to '글 수정하기', "/posts/edit/#{x.id}" %>
+<%= link_to '글 삭제하기', "/posts/destroy/#{x.id}" %>
+</p>
+<% end %>
+<%= link_to '새 글 쓰기', '/posts/new' %>

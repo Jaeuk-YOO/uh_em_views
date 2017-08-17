@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Review Posts</h1>
+<h1>리뷰를 써봅시다.</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Content</th>
+      <th>번호</th>
+      <th>제목</th>
+      <th>내용</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,6 +15,7 @@
   <tbody>
     <% @review_posts.each do |review_post| %>
       <tr>
+        <td><%= review_post.id %></td>
         <td><%= review_post.title %></td>
         <td><%= review_post.content %></td>
         <td><%= link_to 'Show', review_post %></td>
