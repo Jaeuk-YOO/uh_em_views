@@ -31,7 +31,7 @@
 // for devise
 .log { margin: auto; width: 300px; }
 .log h2 { text-align: center; }
-#user_email, #user_password, #user_password_confirmation { width: 300px; height: 40px;}
+#user_email, #user_password, #user_password_confirmation, #user_username { width: 300px; height: 40px;}
 .field { margin: auto; padding-top: 5px; padding-bottom: 5px; }
 .actions { padding: 10px; text-align: center; }
 .submitida { width: 86px; height: 36px; }
@@ -188,7 +188,10 @@ input#priceTop.price_top {
 input#userLocation.user_location {
   background: none;
   border: none;
+  color: white;
 }
+
+
 
 .buttons .submitbutton button {
   background: none;
